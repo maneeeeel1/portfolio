@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap');
+
+.projects-section {
+    display: grid;
+    justify-content: center;
+    font-family:"Playwrite AU NSW";
+}
+
+.projects-section h2 {
+    color: #472702;
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.projects-grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 50px;
+    max-width: 1100px;
+    width: 0 auto;
+    padding: 0 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms ease-in-out;
+    margin-bottom: 10px;
+    width:500px
+}
+
+.project-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.548); /* hover:shadow-2xl */
+}
+
+.project-image-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  transition: transform 300ms ease-in-out;
+}
+
+.project-image-link:hover .project-image {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.project-image-link:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.project-content {
+  padding: 0 10px 15px 15px;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.project-description {
+  color: #4a5568;
+  font-size: 15px;
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.visit-button {
+  display: inline-block;
+  background-color: #472702;
+  color: #ffffff;
+  font-weight: 500;
+  padding:10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: background-color 300ms ease-in-out;
+  font-size: 13px;
+}
+
+.visit-button:hover {
+  background-color: #2b1701;
+}

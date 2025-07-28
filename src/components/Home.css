@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap');
+
+
+.home-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.home-section h2{
+    color: #472702;
+    font-family: "Playwrite AU NSW";
+    margin-bottom: 5px;
+    
+}
+
+.home-section p{
+    color: #472702;
+    font-family: "Playwrite AU NSW";
+    font-size: 16px;
+    font-weight: 400;
+    margin: 50px;
+    text-align: center;
+}
+
+.github-logo{
+    width: 100px;
+}
+
+.linked-logo{
+    width:100px;
+}
