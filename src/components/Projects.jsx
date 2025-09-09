@@ -5,24 +5,25 @@ const Projects = () =>{
     const projects = [
         {
         id: 1,
+        name:"neuraevents",
+        imageUrl: "../img/neuraevents.png",
+        projectUrl: "https://neuraevents.es",
+        description: "Landing Page beta creada para nueva empresa de celebraciones y fiestas. Chat de Open AI implementado para gestionar reservas VIP"
+        },
+        {
+        id: 2,
         name:"Pokémon Project",
         imageUrl: "../img/2025-07-28.png",
         projectUrl: "https://pokeproyectofinal.netlify.app",
         description: "Un proyecto interactivo basado en Pokémon donde utilizo socket.io para jugar a tiempo real, API pokémon para pokédex y pasarela de pago para la tienda de peluches."
         },
-         {
-        id: 2,
+        {
+        id: 3,
         name:"Tienda Nintendo",
         imageUrl: "../img/tienda_nintendo.png",
         projectUrl: "https://challenge-u2s14.onrender.com/products",
         description: "Tienda creada con Backend de tematica Nintendo, solo el admin puede interactuar."
-        },
-        {
-        id: 3,
-        name:"neuraevents",
-        imageUrl: "../img/neuraevents.png",
-        projectUrl: "https://neuraevents.es",
-        description: "Landing Page beta creada para nueva empresa de celebraciones y fiestas."
+
         },
 
     ]
