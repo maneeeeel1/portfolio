@@ -17,6 +17,13 @@ const Projects = () =>{
         projectUrl: "https://challenge-u2s14.onrender.com/products",
         description: "Tienda creada con Backend de tematica Nintendo, solo el admin puede interactuar."
         },
+        {
+        id: 3,
+        name:"neuraevents",
+        imageUrl: "../img/neuraevents.png",
+        projectUrl: "https://neuraevents.es",
+        description: "Landing Page beta creada para nueva empresa de celebraciones y fiestas."
+        },
 
     ]
     return (

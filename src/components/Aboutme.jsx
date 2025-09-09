@@ -3,16 +3,23 @@ import "./Aboutme.css";
 
 
 const Aboutme = () =>{
-    const [showCertificatesImages, setShowCertificatesImages] = useState(false);
+    const [showTechImages, setShowTechImages] = useState(false);
+    const [showCyberImages, setShowCyberImages] = useState(false);
 
-    const handleToggleCertificates = () =>{
-        setShowCertificatesImages(!showCertificatesImages);
+    const handleToggleTechImages = () =>{
+        setShowTechImages(!showTechImages);
+        setShowCyberImages(false);
     };
 
-    return (
-        <div className="about-section">
-            <h2>Manel Bueno Molina</h2>
-                <p>¡Hola! Soy Manel, un apasionado desarrollador FullStack con 1 año de experiencia y estudiante de Ciberseguridad.</p>
+    const handleToggleCyberImages = () =>{
+        setShowCyberImages(!showCyberImages);
+        setShowTechImages(false);
+    };
+
+return (
+    <div className="about-section">
+        <h2>Manel Bueno Molina</h2>
+            <p>¡Hola! Soy Manel, un apasionado desarrollador FullStack con 1 año de experiencia y estudiante de Ciberseguridad.</p>
         <div className="qualifications">
             <h3>Mis Titulaciones IT</h3>
             <ul>
@@ -26,10 +33,10 @@ const Aboutme = () =>{
             </ul>
 
             <div className="cert-link">
-                <button className="link-cert-btn" onClick={handleToggleCertificates}>
-                    {showCertificatesImages ? "OCULTAR" : "TECNOLOGIAS USADAS"} 
+                <button className="link-cert-btn" onClick={handleToggleTechImages}>
+                {showTechImages ? "OCULTAR TECNOLOGÍAS" : "VER TECNOLOGÍAS USADAS"} 
                 </button>
-                {showCertificatesImages && (
+            {showTechImages && (
                 <div className="certificados-grid">
                     <img src="../certificados/HTML.png" alt="html" className="img"/>
                     <img src="../certificados/CSS.png" alt="css" className="img"/>
@@ -41,26 +48,26 @@ const Aboutme = () =>{
                     <img src="../certificados/SQL.png" alt="sql" className="img"/>
                     <img src="../certificados/Express.js.png" alt="express" className="img"/>
                 </div>
-            )}
+                )}
             </div>
-                <li>
-                    <p>Introducción a la Ciberseguridad - [Cisco] - [2025]</p>
-                </li>
-                <div className="cert-link">
-                <button className="link-cert-btn" onClick={handleToggleCertificates}>
-                    {showCertificatesImages ? "OCULTAR" : "TECNOLOGIAS USADAS"} 
+            <li>
+                <p>Introducción a la Ciberseguridad - [Cisco] - [2025]</p>
+            </li>
+            <div className="cert-link">
+                <button className="link-cert-btn" onClick={handleToggleCyberImages}>
+                    {showCyberImages ? "OCULTAR CERTIFICADO" : "VER CERTIFICADO CIBERSEGURIDAD"} 
                 </button>
-                {showCertificatesImages && (
+                {showCyberImages && (
                 <div className="certificados-grid">
 
-                    <img src="../certificados/INTRO_CIBER.png" alt="intro_ciber" className="img"/>
+                    <img src="../certificados/INTRO_CIBER.png" alt="intro_ciber" className="img_intro_ciber"/>
 
                 </div>
                 )}
             </div>
 
-                <li>
-                    <p>Cursando Étical Hacker - [Cisco] - [2025]</p>
+            <li>
+                <p>Cursando Étical Hacker - [Cisco] - [2025]</p>
                 </li>
         </div>
 
@@ -68,9 +75,9 @@ const Aboutme = () =>{
             <h3>¿Quieres saber más?</h3>
                 <button className="btn">
                     <a href="../pdf/CV Manel.pdf" download="CV Manel.pdf">
-                        DESCARGAR CV
+                    DESCARGAR CV
                     </a>
-                </button>
+                    </button>
         </div>
     </div>
     )
