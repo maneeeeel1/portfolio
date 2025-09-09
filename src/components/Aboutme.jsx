@@ -66,8 +66,8 @@ return (
                 )}
             </div>
 
-            <li>
-                <p>Cursando Étical Hacker - [Cisco] - [2025]</p>
+                <li>
+                    <p>Cursando Étical Hacker - [Cisco] - [2025]</p>
                 </li>
         </div>
 
