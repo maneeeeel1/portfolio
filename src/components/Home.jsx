@@ -6,9 +6,9 @@ const Home = () =>{
         <div className="home-section">
             <h2>¡Bienvenido/a a mi Portfolio! </h2>
 
-            <p>En este espacio, te invito a explorar mi trayectoria como desarrollador web Full Stack.<br />
-            Aquí podrás conocer un poco más sobre mí, descubrir mis habilidades y, lo más importante, sumergirte en los proyectos que he desarrollado.<br />
-            Mi objetivo es aprender tecnologías y crear proyectos eficientes y atractivos.<br />
+            <p>En este espacio, te invito a explorar mi trayectoria como desarrollador web Full Stack y mi especialización en Ciberseguridad.<br />
+            Aquí podrás conocer un poco más sobre mí, descubrir mis habilidades, sumergirte en los proyectos que he desarrollado y ver titulaciones que voy adquiriendo.<br />
+            Mi objetivo es aprender tecnologías, crear proyectos atractivos y aprender día a día.<br />
             ¡Espero que disfrutes el recorrido!
             </p>
             <div className="logos-home">

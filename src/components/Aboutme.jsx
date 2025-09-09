@@ -12,7 +12,7 @@ const Aboutme = () =>{
     return (
         <div className="about-section">
             <h2>Manel Bueno Molina</h2>
-                <p>¡Hola! Soy Manel, un apasionado desarrollador FullStack con 1 año de experiencia en la creación de aplicaciones web completas.</p>
+                <p>¡Hola! Soy Manel, un apasionado desarrollador FullStack con 1 año de experiencia y estudiante de Ciberseguridad.</p>
         <div className="qualifications">
             <h3>Mis Titulaciones IT</h3>
             <ul>
@@ -43,6 +43,25 @@ const Aboutme = () =>{
                 </div>
             )}
             </div>
+                <li>
+                    <p>Introducción a la Ciberseguridad - [Cisco] - [2025]</p>
+                </li>
+                <div className="cert-link">
+                <button className="link-cert-btn" onClick={handleToggleCertificates}>
+                    {showCertificatesImages ? "OCULTAR" : "TECNOLOGIAS USADAS"} 
+                </button>
+                {showCertificatesImages && (
+                <div className="certificados-grid">
+
+                    <img src="../certificados/INTRO_CIBER.png" alt="intro_ciber" className="img"/>
+
+                </div>
+                )}
+            </div>
+
+                <li>
+                    <p>Cursando Étical Hacker - [Cisco] - [2025]</p>
+                </li>
         </div>
 
         <div className="cv-link">
